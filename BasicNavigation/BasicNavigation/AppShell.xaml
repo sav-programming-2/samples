@@ -4,11 +4,19 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:BasicNavigation"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:views="clr-namespace:BasicNavigation.Views"
+    Shell.FlyoutBehavior="Flyout">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab>
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+            <ShellContent
+                Title="Second Page"
+                ContentTemplate="{DataTemplate views:SecondPage}"
+                Route="SecondPage" />
+        </Tab>
+    </FlyoutItem>
 </Shell>
