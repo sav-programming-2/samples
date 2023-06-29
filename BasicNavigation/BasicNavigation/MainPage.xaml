@@ -35,6 +35,9 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <Button x:Name="SimpleNavigationButton"
+                    Text="Test simple navigation"
+                    Clicked="SimpleNavigationButton_Clicked"></Button>
         </VerticalStackLayout>
     </ScrollView>
 

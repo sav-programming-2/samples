@@ -1,4 +1,6 @@
-﻿namespace BasicNavigation;
+﻿using BasicNavigation.Views;
+
+namespace BasicNavigation;
 
 public partial class MainPage : ContentPage
 {
@@ -20,5 +22,13 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+
+    private async void SimpleNavigationButton_Clicked(object sender, EventArgs e)
+    {
+        // See Page navigation, https://learn.microsoft.com/en-us/dotnet/maui/xaml/fundamentals/get-started#page-navigation
+        var simpleNavigationPage = new SimpleNavigationPage();
+		simpleNavigationPage.SomeIntegerData = count;
+		await Navigation.PushAsync(simpleNavigationPage);
+    }
 }
 
