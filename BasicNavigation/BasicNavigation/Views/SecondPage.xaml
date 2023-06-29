@@ -15,5 +15,11 @@
             HorizontalOptions="Center" />
 
         <Button x:Name="GoToMainPage" Text="Takaisin pääsivulle"></Button>
+
+        <Line></Line>
+
+        <Label Text="Kirjoita jotakin tietoa siirrettäväksi DetailsPage-sivulle"></Label>
+        <Entry x:Name="InfoForDetailsPage"></Entry>
+        <Button x:Name="OpenDetailsPage" Text="Vie teksti ja avaa DetailsPage"></Button>
     </VerticalStackLayout>
 </ContentPage>

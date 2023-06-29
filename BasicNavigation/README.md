@@ -8,4 +8,5 @@ The Views folder contains the pages of the app.
 
 ## Views folder
 
-SecondPage.xaml is a content page. See more [ContentPage](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/pages/contentpage).
+- SecondPage.xaml is a content page. See more [ContentPage](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/pages/contentpage).
+- DetailsPage.xaml is a content page for some details from the SecondPage.
