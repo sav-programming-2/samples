@@ -1,2 +1,5 @@
-# samples
-Some .NET MAUI samples
+# .NET MAUI Samples
+
+Some .NET MAUI samples for UI Programming course.
+
+Each folder has its own solution file.
